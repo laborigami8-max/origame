@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origame | Peças Únicas Impressas em 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones gratuitos para o menu e busca -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="#inicio">
+            <img src="Imagens/logo.png" alt="Origame">
+        </a>
+    </div>
+    
+    <nav>
+        <a href="#inicio">Início</a>
+        <div class="dropdown">
+            <a href="#categorias">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-icons">
+        <a href="#buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#carrinho"><i class="fa-solid fa-basket-shopping"></i></a>
+    </div>
+</header>
+
+<!-- SEÇÃO HERO (BANNER PRINCIPAL) -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>PEÇAS ÚNICAS <br> <span>IMPRESSAS EM 3D</span></h1>
+        <p>Organizadores, quadros, brinquedos e chaveiros feitos em PLA com criatividade, qualidade e muito carinho para você.</p>
+        <a href="#loja" class="btn-hero">CONHEÇA A COLEÇÃO <i class="fa-solid fa-chevron-right"></i></a>
+        
+        <!-- Diferenciais abaixo do botão -->
+        <div class="diferenciais-hero">
+            <div class="dif-item">⚡ Peças Exclusivas <br><span>Design autoral</span></div>
+            <div class="dif-item">🌱 PLA de Qualidade <br><span>Sustentável e resistente</span></div>
+            <div class="dif-item">📦 Envio para todo Brasil <br><span>Com segurança</span></div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <!-- Banner principal (substitua pelo seu arquivo se preferir) -->
+        <img src="Imagens/suportearticulado1.jpeg" alt="Destaque Origame">
+    </div>
+</section>
+
+<!-- SEÇÃO CATEGORIAS -->
+<section id="categorias">
+    <h2 class="titulo-secao">NOSSAS CATEGORIAS</h2>
+    <div class="grid-categorias">
+        <div class="card-categoria">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Organizadores</h3>
+            <a href="#loja">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card-categoria">
+            <i class="fa-regular fa-image"></i>
+            <h3>Quadros Decorativos</h3>
+            <a href="#loja">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card-categoria">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Brinquedos</h3>
+            <a href="#loja">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="card-categoria">
+            <i class="fa-solid fa-key"></i>
+            <h3>Chaveiros</h3>
+            <a href="#loja">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO PRODUTOS EM DESTAQUE -->
+<section id="loja">
+    <h2 class="titulo-secao">PRODUTOS EM DESTAQUE</h2>
+    <div class="produtos">
+        
+        <div class="produto">
+            <div class="img-container"><img src="Imagens/suportearticulado1.jpeg" alt="Organizador de Mesa"></div>
+            <h3>Organizador de Mesa Premium</h3>
+            <p class="preco">R$ 69,90</p>
+            <button class="btn-comprar">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <div class="img-container"><img src="Imagens/placatriangulo1.jpeg" alt="Quadro Árvore da Vida"></div>
+            <h3>Quadro Árvore da Vida 3D</h3>
+            <p class="preco">R$ 89,90</p>
+            <button class="btn-comprar">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <div class="img-container"><img src="Imagens/suportecelgato.jpeg" alt="Dragão Articulado"></div>
+            <h3>Dragão Articulado</h3>
+            <p class="preco">R$ 129,90</p>
+            <button class="btn-comprar">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <div class="img-container"><img src="Imagens/suportecelgato.jpeg" alt="Baby Yoda"></div>
+            <h3>Baby Yoda (Grogu)</h3>
+            <p class="preco">R$ 99,90</p>
+            <button class="btn-comprar">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+            <div class="img-container"><img src="Imagens/logo.png" alt="Chaveiro Personalizado"></div>
+            <h3>Chaveiro Personalizado com Nome</h3>
+            <p class="preco">R$ 19,90</p>
+            <button class="btn-comprar">COMPRAR</button>
+        </div>
+
+    </div>
+    <div class="ver-todos-container">
+        <a href="#loja" class="btn-ver-todos">VER TODOS OS PRODUTOS</a>
+    </div>
+</section>
+
+<!-- SEÇÃO PROCESSO (IDEIA -> MODELAGEM -> IMPRESSÃO -> ACABAMENTO) -->
+<section class="processo">
+    <div class="passo">
+        <i class="fa-regular fa-lightbulb"></i>
+        <h4>IDEIA</h4>
+        <p>Você imagina</p>
+    </div>
+    <div class="seta-passo"><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="passo">
+        <i class="fa-solid fa-cube"></i>
+        <h4>MODELAGEM 3D</h4>
+        <p>Criamos o projeto</p>
+    </div>
+    <div class="seta-passo"><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="passo">
+        <i class="fa-solid fa-layer-group"></i>
+        <h4>IMPRESSÃO</h4>
+        <p>Impressão em PLA</p>
+    </div>
+    <div class="seta-passo"><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="passo">
+        <i class="fa-regular fa-heart"></i>
+        <h4>ACABAMENTO</h4>
+        <p>Detalhes que encantam</p>
+    </div>
+</section>
+
+<!-- RODAPÉ COMPLETO -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-col logo-col">
+            <img src="Imagens/logo.png" alt="Origame" class="footer-logo">
+            <p>Transformamos ideias em peças únicas. Impressão 3D em PLA com qualidade, criatividade e paixão pelo que fazemos.</p>
+            <div class="sociais">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h4>LINKS RÁPIDOS</h4>
+            <a href="#inicio">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#personalizados">Personalizados</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contato">Contato</a>
+        </div>
+        
+        <div class="footer-col">
+            <h4>ATENDIMENTO</h4>
+            <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+            <p><i class="fa-regular fa-envelope"></i> contato@origame.com.br</p>
+            <p><i class="fa-regular fa-clock"></i> Seg a Sex - 9h às 18h</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>FORMAS DE PAGAMENTO</h4>
+            <div class="pagamentos">
+                <i class="fa-brands fa-pix" style="color: #25D366;"></i> Pix
+                <i class="fa-brands fa-cc-visa"></i> Visa
+                <i class="fa-brands fa-cc-mastercard"></i> Master
+            </div>
+            <h4 style="margin-top: 20px;">SITE SEGURO</h4>
+            <p class="seguro"><i class="fa-solid fa-lock"></i> Seus dados protegidos com criptografia SSL</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 ORIGAME - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- ÍCONE FLUTUANTE DO WHATSAPP -->
+<a href="https://wa.me" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
