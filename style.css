@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -199,10 +199,12 @@ nav a:hover {
     border-radius: 4px;
 }
 
+/* CORREÇÃO DO ITEM 14: Ajuste para cobrir toda a área do container sem quebrar o grid */
 .img-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .produto h3 {
@@ -381,10 +383,7 @@ footer {
     background: #128C7E;
 }
 
-/* ==========================================================================
-   🚨 ADICIONADO: REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) PARA CELULARES
-   ========================================================================== */
-
+/* REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) PARA CELULARES */
 @media (max-width: 992px) {
     body {
         padding-top: 90px;
@@ -395,7 +394,6 @@ footer {
         height: 90px;
     }
 
-    /* Reduz levemente a logo para não esmagar o menu */
     .logo {
         width: 160px;
     }
@@ -412,7 +410,7 @@ footer {
     }
 
     .hero {
-        flex-direction: column-reverse; /* Foto fica em cima do texto no celular */
+        flex-direction: column-reverse; 
         padding: 40px 30px;
         text-align: center;
     }
@@ -443,7 +441,6 @@ footer {
         justify-content: space-between;
     }
 
-    /* Otimiza espaço no menu para telas bem pequenas */
     nav {
         gap: 10px;
     }
@@ -454,7 +451,7 @@ footer {
     }
 
     .header-icons {
-        display: none; /* Esconde os ícones extras de busca/carrinho para focar nos links essenciais */
+        display: none; 
     }
 
     .produtos {
@@ -462,7 +459,7 @@ footer {
     }
 
     .produto {
-        width: 100%; /* Os produtos tomam a largura total de forma elegante na tela do cel */
+        width: 100%; 
     }
 
     .processo {
@@ -471,7 +468,7 @@ footer {
     }
 
     .seta-passo {
-        transform: rotate(90deg); /* Faz as setas apontarem para baixo no celular */
+        transform: rotate(90deg); 
     }
 
     footer {
