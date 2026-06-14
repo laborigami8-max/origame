@@ -9,6 +9,7 @@ body {
     color: #ffffff;
     font-family: 'Segoe UI', Arial, sans-serif;
     padding-top: 100px;
+    overflow-x: hidden; /* Evita que o site crie barras de rolagem para os lados */
 }
 
 /* HEADER / MENU */
@@ -26,20 +27,19 @@ header {
     border-bottom: 1px solid #111;
 }
 
-/* 🌟 LOGO CORRIGIDA COM FORÇA TOTAL NA LARGURA */
 .logo {
     display: flex;
     align-items: center;
-    overflow: visible; /* Permite que o desenho saia da caixa se necessário */
-    width: 220px;      /* Define um espaço generoso na largura para a imagem se espalhar */
+    overflow: visible; 
+    width: 220px;      
 }
 
 .logo img {
-    width: 100%;          /* Obriga a imagem a ocupar todo o espaço da largura */
-    height: auto;         /* Calcula a altura proporcionalmente */
+    width: 100%;          
+    height: auto;         
     display: block;
     object-fit: contain;  
-    transform: scale(2.4); /* Aumenta radicalmente o zoom para eliminar o vazio transparente */
+    transform: scale(2.4); 
     transform-origin: left center; 
 }
 
@@ -80,6 +80,7 @@ nav a:hover {
     padding: 40px 80px;
     min-height: 80vh;
     background: linear-gradient(145deg, #0a0a0a 0%, #000000 100%);
+    gap: 40px;
 }
 
 .hero-content {
@@ -142,8 +143,14 @@ nav a:hover {
     font-weight: normal;
 }
 
-.hero-image img {
+.hero-image {
     max-width: 450px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.1);
 }
@@ -158,55 +165,11 @@ nav a:hover {
     position: relative;
 }
 
-/* CATEGORIAS */
-.grid-categorias {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 60px;
-}
-
-.card-categoria {
-    background: #050505;
-    border: 1px solid #151515;
-    width: 230px;
-    padding: 40px 20px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card-categoria:hover {
-    border-color: #d4af37;
-}
-
-.card-categoria i {
-    font-size: 32px;
-    color: #d4af37;
-    margin-bottom: 20px;
-}
-
-.card-categoria h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.card-categoria a {
-    color: #666666;
-    font-size: 12px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.card-categoria:hover a {
-    color: #d4af37;
-}
-
 /* PRODUTOS */
 .produtos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     padding: 0 60px;
 }
@@ -214,10 +177,11 @@ nav a:hover {
 .produto {
     background: #050505;
     border: 1px solid #151515;
-    width: 220px;
-    padding: 15px;
+    width: 280px; /* Ampliado levemente para acomodar melhor em grades */
+    padding: 20px;
     text-align: center;
     transition: 0.3s;
+    border-radius: 8px;
 }
 
 .produto:hover {
@@ -226,12 +190,13 @@ nav a:hover {
 
 .img-container {
     background: #0a0a0a;
-    height: 180px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .img-container img {
@@ -241,11 +206,11 @@ nav a:hover {
 }
 
 .produto h3 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     color: #dddddd;
     margin-bottom: 10px;
-    height: 40px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,7 +219,7 @@ nav a:hover {
 .preco {
     color: #ffffff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
@@ -262,31 +227,17 @@ nav a:hover {
     width: 100%;
     background: #d4af37;
     color: black;
-    padding: 10px;
+    padding: 12px;
     border: none;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 4px;
 }
 
 .btn-comprar:hover {
     background: #ffffff;
-}
-
-.ver-todos-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.btn-ver-todos {
-    display: inline-block;
-    border-bottom: 1px solid #d4af37;
-    color: #ffffff;
-    text-decoration: none;
-    padding-bottom: 5px;
-    font-size: 12px;
-    letter-spacing: 1px;
 }
 
 /* PROCESSO DE PRODUÇÃO */
@@ -345,7 +296,7 @@ footer {
 
 .footer-col {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .logo-col p {
@@ -409,17 +360,17 @@ footer {
 /* WHATSAPP FLUTUANTE */
 .whatsapp-float {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background: #25D366;
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 26px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     z-index: 2000;
     transition: 0.3s;
@@ -428,4 +379,102 @@ footer {
 .whatsapp-float:hover {
     transform: scale(1.1);
     background: #128C7E;
+}
+
+/* ==========================================================================
+   🚨 ADICIONADO: REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) PARA CELULARES
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    body {
+        padding-top: 90px;
+    }
+
+    header {
+        padding: 0 30px;
+        height: 90px;
+    }
+
+    /* Reduz levemente a logo para não esmagar o menu */
+    .logo {
+        width: 160px;
+    }
+    .logo img {
+        transform: scale(1.8);
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column-reverse; /* Foto fica em cima do texto no celular */
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .diferenciais-hero {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 15px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Otimiza espaço no menu para telas bem pequenas */
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+
+    .header-icons {
+        display: none; /* Esconde os ícones extras de busca/carrinho para focar nos links essenciais */
+    }
+
+    .produtos {
+        padding: 0 15px;
+    }
+
+    .produto {
+        width: 100%; /* Os produtos tomam a largura total de forma elegante na tela do cel */
+    }
+
+    .processo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .seta-passo {
+        transform: rotate(90deg); /* Faz as setas apontarem para baixo no celular */
+    }
+
+    footer {
+        padding: 40px 20px 20px 20px;
+    }
 }
