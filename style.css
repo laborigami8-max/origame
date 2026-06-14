@@ -26,9 +26,12 @@ header {
     border-bottom: 1px solid #111;
 }
 
+/* ALTERADO: Logomarca ampliada e ajustada para melhor visibilidade */
 .logo img {
-    height: 45px;
+    height: 70px;         
     width: auto;
+    display: block;
+    object-fit: contain;  
 }
 
 nav {
