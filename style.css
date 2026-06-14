@@ -8,7 +8,7 @@ body {
     background: #000000;
     color: #ffffff;
     font-family: 'Segoe UI', Arial, sans-serif;
-    padding-top: 80px;
+    padding-top: 100px; /* Ajustado de 80px para 100px para alinhar com o novo menu */
 }
 
 /* HEADER / MENU */
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    height: 80px;
+    height: 100px;        /* Aumentado para 100px para dar espaço à logo maior */
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,12 +26,14 @@ header {
     border-bottom: 1px solid #111;
 }
 
-/* ALTERADO: Logomarca ampliada e ajustada para melhor visibilidade */
+/* ALTERADO: Altura ampliada e aplicado zoom para destacar o desenho da logo */
 .logo img {
-    height: 70px;         
+    height: 100px;        
     width: auto;
     display: block;
     object-fit: contain;  
+    transform: scale(1.5); /* Dá zoom na imagem para eliminar as bordas vazias */
+    transform-origin: left center; /* Mantém a logo alinhada perfeitamente à esquerda */
 }
 
 nav {
