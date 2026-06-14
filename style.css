@@ -8,7 +8,7 @@ body {
     background: #000000;
     color: #ffffff;
     font-family: 'Segoe UI', Arial, sans-serif;
-    padding-top: 100px; /* Ajustado de 80px para 100px para alinhar com o novo menu */
+    padding-top: 100px;
 }
 
 /* HEADER / MENU */
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    height: 100px;        /* Aumentado para 100px para dar espaço à logo maior */
+    height: 100px;        
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,14 +26,21 @@ header {
     border-bottom: 1px solid #111;
 }
 
-/* ALTERADO: Altura ampliada e aplicado zoom para destacar o desenho da logo */
+/* 🌟 LOGO CORRIGIDA COM FORÇA TOTAL NA LARGURA */
+.logo {
+    display: flex;
+    align-items: center;
+    overflow: visible; /* Permite que o desenho saia da caixa se necessário */
+    width: 220px;      /* Define um espaço generoso na largura para a imagem se espalhar */
+}
+
 .logo img {
-    height: 100px;        
-    width: auto;
+    width: 100%;          /* Obriga a imagem a ocupar todo o espaço da largura */
+    height: auto;         /* Calcula a altura proporcionalmente */
     display: block;
     object-fit: contain;  
-    transform: scale(1.5); /* Dá zoom na imagem para eliminar as bordas vazias */
-    transform-origin: left center; /* Mantém a logo alinhada perfeitamente à esquerda */
+    transform: scale(2.4); /* Aumenta radicalmente o zoom para eliminar o vazio transparente */
+    transform-origin: left center; 
 }
 
 nav {
